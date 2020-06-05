@@ -5,18 +5,12 @@
 /* eslint-disable no-shadow */
 // init Value
 const API_KEY = '&apikey=efc4ed08&';
-const url = 'http://www.omdbapi.com/?s=';
+const url = 'https://www.omdbapi.com/?s=';
 const buttonElement = document.querySelector('#search');
 const inputElement = document.querySelector('#inputValue');
 const movieSearchable = document.querySelector('#movie-searchable');
 const clearInput = document.querySelector('#clearInput');
-/*
-Poster: "https://m.media-amazon.com/images/M/MV5BMjY2NzE0OTQ4Nl5BMl5BanBnXkFtZTcwMzQ4NTE3MQ@@._V1_SX300.jpg"
-Title: "Arn: The Knight Templar"
-Type: "movie"
-Year: "2007"
-imdbID: "tt0837106" */
-// eslint-disable-next-line linebreak-style
+
 function movieSection(movies) {
   return movies.map((movie) => {
     if (movie.Poster === 'N/A') {
